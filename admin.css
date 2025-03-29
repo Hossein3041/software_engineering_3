@@ -1,0 +1,532 @@
+
+.admin-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.admin-header h2 {
+  margin: 0;
+  color: #1565c0;
+}
+
+.admin-stats {
+  display: flex;
+  gap: 15px;
+}
+
+.stat-box {
+  background-color: #f5f9ff;
+  border-radius: 6px;
+  padding: 12px 20px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1565c0;
+}
+
+.admin-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-icon {
+  margin-right: 5px;
+}
+
+.admin-section-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-tab-button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+  border-bottom: 3px solid transparent;
+}
+
+.admin-tab-button.active {
+  color: #1976d2;
+  border-bottom: 3px solid #1976d2;
+}
+
+.admin-tab-content {
+  display: none;
+}
+
+.admin-tab-content.active {
+  display: block;
+}
+
+.admin-section-subtitle {
+  margin-top: 0;
+  color: #1565c0;
+  margin-bottom: 1.5rem;
+}
+
+.admin-table-container {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.admin-appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.appointment-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.appointment-status.booked {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.appointment-status.cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.appointment-status.completed {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.loader {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.loading-row td {
+  text-align: center;
+  padding: 30px 0;
+  color: #666;
+}
+
+.no-results-row td {
+  text-align: center;
+  padding: 30px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.admin-no-data {
+  text-align: center;
+  padding: 30px;
+  color: #757575;
+  font-style: italic;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.action-button.view {
+  color: #1976d2;
+}
+
+.action-button.view:hover {
+  background-color: #e3f2fd;
+}
+
+.action-button.cancel {
+  color: #d32f2f;
+}
+
+.action-button.cancel:hover {
+  background-color: #ffebee;
+}
+
+.admin-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.admin-button:hover {
+  transform: translateY(-1px);
+}
+
+.admin-button.primary {
+  background-color: #1976d2;
+  color: white;
+}
+
+.admin-button.primary:hover {
+  background-color: #1565c0;
+}
+
+.admin-button.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.admin-button.secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.admin-button.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.admin-button.danger:hover {
+  background-color: #d32f2f;
+}
+
+.admin-button.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.admin-button.success:hover {
+  background-color: #388e3c;
+}
+
+.admin-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #444;
+}
+
+.filter-select,
+.filter-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.add-admin-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.add-admin-item h4 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.admin-date-picker {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.admin-vaccines-container,
+.admin-timeslots-container {
+  margin-bottom: 30px;
+}
+
+.vaccine-quantity {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.admin-help-text {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  color: #0d47a1;
+  font-size: 0.9rem;
+}
+
+.admin-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+}
+
+.admin-modal-content {
+  background-color: #fff;
+  margin: 60px auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  position: relative;
+}
+
+.confirm-modal {
+  max-width: 400px;
+  text-align: center;
+}
+
+.admin-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.admin-modal-close:hover {
+  color: #333;
+}
+
+.appointment-detail-content {
+  margin: 20px 0;
+}
+
+.detail-row {
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.detail-label {
+  width: 140px;
+  font-weight: 600;
+  color: #555;
+}
+
+.detail-value {
+  flex: 1;
+  color: #333;
+}
+
+.detail-qr-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.status-booked {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.status-cancelled {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.status-completed {
+  color: #1565c0;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-stats {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .admin-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .filter-select,
+  .filter-input {
+    width: 100%;
+  }
+
+  .admin-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .admin-section-tabs {
+    flex-wrap: wrap;
+  }
+
+  .admin-tab-button {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .date-picker-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .date-picker-container label,
+  .date-picker-container input,
+  .date-picker-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .admin-modal-content {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+  }
+
+  .detail-label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .admin-modal-actions {
+    flex-direction: column;
+  }
+
+  .admin-modal-actions button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

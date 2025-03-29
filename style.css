@@ -1,0 +1,72 @@
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./hero.css");
+@import url("./bookingStyle.css");
+@import url("./admin.css");
+@import url("./action.css");
+@import url("./appointments.css");
+@import url("./features.css");
+@import url("./info.css");
+@import url("./main-content.css");
+@import url("./process.css");
+@import url("./form.css");
+
+* {
+  box-sizing: border-box;
+}
+
+.cancel-booking-btn,
+.show-qr-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.status-booked {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.status-completed {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.main {
+  max-width: 800px;
+}
+
+.registerTitle {
+  display: flex;
+  justify-content: center;
+}

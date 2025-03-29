@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impfterminregistrierung</title>
+    <base href="/docker-swe3-2024-14-java/" />
+    <link rel="stylesheet" href="/docker-swe3-2024-14-java/static/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">💉</span>
+        <h2>Impfterminregistrierung</h2>
+      </div>
+      <nav class="nav">
+        <a class="nav-link" href="/hero" id="nav-home">Home</a>
+        <a class="nav-link" href="/register" id="nav-register">Registrieren</a>
+        <a class="nav-link" href="/login" id="nav-login">Anmelden</a>
+        <a
+          class="nav-link my-bookings"
+          id="my-bookings-link"
+          href="/my-bookings"
+          style="display: none"
+          >Meine Buchungen</a
+        >
+        <a class="nav-link" href="/appointments" id="nav-appointments"
+          >Termine</a
+        >
+        <a
+          class="nav-link logout"
+          id="logout"
+          href="/logout"
+          style="display: none"
+          >Abmelden</a
+        >
+      </nav>
+    </header>
+    <section id="hero" class="hero view">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Impfterminregistrierung</h1>
+        <h2 class="hero-subtitle">Schnell und einfach Impftermine buchen</h2>
+        <p class="hero-text">
+          Unsere Plattform bietet Ihnen eine einfache Möglichkeit, Impftermine
+          zu buchen und zu verwalten.
+        </p>
+      </div>
+    </section>
+    <section id="hero-main-content" class="main-content view">
+      <div class="content-container">
+        <div class="features-section">
+          <h2>Unsere Funktionen</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">📅</div>
+              <h3>Einfache Terminbuchung</h3>
+              <p>
+                Buchen Sie mit wenigen Klicks einen Termin in einem Impfzentrum
+                Ihrer Wahl.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🏥</div>
+              <h3>Verschiedene Impfzentren</h3>
+              <p>
+                Wählen Sie aus verschiedenen Impfzentren in Ihrer Nähe mit
+                flexiblen Öffnungszeiten.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">💉</div>
+              <h3>Mehrere Impfstoffe</h3>
+              <p>
+                Je nach Verfügbarkeit können Sie zwischen verschiedenen
+                Impfstoffen wählen.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">👨‍👩‍👧‍👦</div>
+              <h3>Buchungen für Familie</h3>
+              <p>
+                Sie können auch Termine für Familienangehörige buchen (bis zu 5
+                Personen insgesamt).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-section">
+          <h2>So funktioniert's</h2>
+          <div class="process-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Registrieren</h3>
+                <p>Erstellen Sie ein Konto mit Ihrer E-Mail-Adresse.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Impfzentrum wählen</h3>
+                <p>Wählen Sie ein Impfzentrum in Ihrer Nähe.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Termin buchen</h3>
+                <p>
+                  Wählen Sie einen passenden Zeitslot und buchen Sie Ihren
+                  Termin.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>QR-Code speichern</h3>
+                <p>
+                  Ihr QR-Code wird generiert - zeigen Sie diesen beim Impftermin
+                  vor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <h2>Wichtige Informationen</h2>
+          <div class="info-cards">
+            <div class="info-card">
+              <h3>Hinweise zur Impfung</h3>
+              <ul>
+                <li>Bringen Sie einen gültigen Ausweis zum Termin mit</li>
+                <li>Erscheinen Sie pünktlich zu Ihrem Termin</li>
+                <li>Sie können bis zu 5 Termine buchen</li>
+                <li>
+                  Bei Verhinderung stornieren Sie Ihren Termin bitte rechtzeitig
+                </li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3>Hilfe & Kontakt</h3>
+              <p>
+                Sollten Sie Fragen haben oder Hilfe benötigen, kontaktieren Sie
+                bitte unseren Support:
+              </p>
+              <p class="contact-info">
+                <strong>E-Mail:</strong> support@impftermin-nemerb.de<br />
+                <strong>Telefon:</strong> 0123-456789<br />
+                <strong>Servicezeiten:</strong> Mo-Fr, 8:00-18:00 Uhr
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-section">
+          <h2>Jetzt loslegen</h2>
+          <p>Registrieren Sie sich jetzt und buchen Sie Ihren Impftermin.</p>
+          <div class="action-buttons">
+            <a href="/register" class="action-button register-button"
+              >Registrieren</a
+            >
+            <a href="/login" class="action-button login-button">Anmelden</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="view admin-section">
+      <div class="admin-header">
+        <h2 class="section-title">
+          Admin-Bereich: <span id="admin-center-name">Impfzentrum</span>
+        </h2>
+        <div class="admin-stats">
+          <div class="stat-box">
+            <span class="stat-label">Alle Termine</span>
+            <span class="stat-value" id="total-appointments">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Offene Termine</span>
+            <span class="stat-value" id="open-appointments">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Stornierte Termine</span>
+            <span class="stat-value" id="cancelled-appointments">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-section-tabs">
+        <button class="admin-tab-button active" data-tab="appointments">
+          Termine
+        </button>
+        <button class="admin-tab-button" data-tab="vaccines">Impfstoffe</button>
+        <button class="admin-tab-button" data-tab="timeslots">Zeitslots</button>
+      </div>
+
+      <div id="admin-appointments" class="admin-tab-content active">
+        <div class="admin-filters">
+          <div class="filter-group">
+            <label for="status-filter">Status:</label>
+            <select id="status-filter" class="filter-select">
+              <option value="all">Alle</option>
+              <option value="BOOKED">Gebucht</option>
+              <option value="CANCELLED">Storniert</option>
+              <option value="COMPLETED">Abgeschlossen</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="date-filter">Datum:</label>
+            <input type="date" id="date-filter" class="filter-input" />
+          </div>
+          <button id="clear-filters" class="admin-button secondary">
+            Filter zurücksetzen
+          </button>
+        </div>
+
+        <div class="admin-table-container">
+          <table class="admin-appointments-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Patient</th>
+                <th>Datum</th>
+                <th>Uhrzeit</th>
+                <th>Impfstoff</th>
+                <th>Status</th>
+                <th>Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-appointments-list">
+              <tr class="loading-row">
+                <td colspan="7">Termine werden geladen...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="admin-vaccines" class="admin-tab-content" style="display: none">
+        <div class="admin-section-header">
+          <h3 class="admin-section-subtitle">Impfstoff-Management</h3>
+          <button id="refresh-vaccines-btn" class="admin-button secondary">
+            <span class="button-icon">🔄</span> Aktualisieren
+          </button>
+        </div>
+
+        <div class="admin-vaccines-container">
+          <div class="loader" id="vaccines-loader">
+            Impfstoffe werden geladen...
+          </div>
+
+          <table class="admin-vaccines-table admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Details</th>
+                <th>Bestand</th>
+                <th>Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-vaccines-list"></tbody>
+          </table>
+
+          <div
+            class="admin-no-data"
+            id="no-vaccines-message"
+            style="display: none"
+          >
+            Keine Impfstoffe gefunden. Fügen Sie unten einen neuen Impfstoff
+            hinzu.
+          </div>
+        </div>
+
+        <div class="add-admin-item">
+          <h4>Neuen Impfstoff hinzufügen</h4>
+          <form id="add-vaccine-form">
+            <div class="form-group">
+              <label for="new-vaccine-name">Name:</label>
+              <input type="text" id="new-vaccine-name" required />
+            </div>
+            <div class="form-group">
+              <label for="new-vaccine-details">Details/Beschreibung:</label>
+              <textarea id="new-vaccine-details" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="new-vaccine-quantity">Anfangsbestand:</label>
+              <input
+                type="number"
+                id="new-vaccine-quantity"
+                min="0"
+                value="0"
+                required
+              />
+            </div>
+            <button type="submit" class="admin-button primary">
+              Impfstoff hinzufügen
+            </button>
+          </form>
+        </div>
+
+        <div class="admin-help-text">
+          <p>
+            <strong>Hinweis:</strong> Neue Impfstoffe werden sofort für
+            Buchungen verfügbar sein.
+          </p>
+          <p>
+            Um einen Impfstoff zu aktualisieren, ändern Sie einfach die Menge
+            und klicken Sie auf "Aktualisieren".
+          </p>
+        </div>
+      </div>
+
+      <div id="admin-timeslots" class="admin-tab-content" style="display: none">
+        <h3 class="admin-section-subtitle">Zeitslot-Management</h3>
+        <div class="admin-timeslots-container">
+          <div class="date-picker-container">
+            <label for="admin-date-picker">Datum wählen:</label>
+            <input
+              type="date"
+              id="admin-date-picker"
+              class="admin-date-picker"
+            />
+            <button id="load-timeslots" class="admin-button primary">
+              Laden
+            </button>
+          </div>
+          <div class="loader" id="timeslots-loader">
+            Zeitslots werden geladen...
+          </div>
+          <table class="admin-timeslots-table">
+            <thead>
+              <tr>
+                <th>Start</th>
+                <th>Ende</th>
+                <th>Kapazität</th>
+                <th>Gebucht</th>
+                <th>Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-timeslots-list"></tbody>
+          </table>
+          <div class="add-timeslot-container">
+            <h4>Neuen Zeitslot hinzufügen</h4>
+            <form id="add-timeslot-form">
+              <div class="form-group">
+                <label for="new-timeslot-start">Startzeit:</label>
+                <input type="datetime-local" id="new-timeslot-start" required />
+              </div>
+              <div class="form-group">
+                <label for="new-timeslot-end">Endzeit:</label>
+                <input type="datetime-local" id="new-timeslot-end" required />
+              </div>
+              <div class="form-group">
+                <label for="new-timeslot-capacity">Kapazität:</label>
+                <input
+                  type="number"
+                  id="new-timeslot-capacity"
+                  min="1"
+                  value="10"
+                  required
+                />
+              </div>
+              <button type="submit" class="admin-button primary">
+                Zeitslot erstellen
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="admin-appointment-details" class="admin-modal">
+        <div class="admin-modal-content">
+          <span class="admin-modal-close">&times;</span>
+          <h3>Termindetails</h3>
+          <div class="appointment-detail-content">
+            <div class="detail-row">
+              <span class="detail-label">Termin-ID:</span>
+              <span class="detail-value" id="detail-id"></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Patient:</span>
+              <span class="detail-value" id="detail-patient"></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Datum & Zeit:</span>
+              <span class="detail-value" id="detail-datetime"></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Impfstoff:</span>
+              <span class="detail-value" id="detail-vaccine"></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Status:</span>
+              <span class="detail-value" id="detail-status"></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Erstellt am:</span>
+              <span class="detail-value" id="detail-created"></span>
+            </div>
+            <div class="detail-row cancelled-info" style="display: none">
+              <span class="detail-label">Storniert am:</span>
+              <span class="detail-value" id="detail-cancelled"></span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">QR-Code:</span>
+              <div id="detail-qr-code" class="detail-qr-container"></div>
+            </div>
+          </div>
+          <div class="admin-modal-actions">
+            <button id="detail-cancel-btn" class="admin-button danger">
+              Termin stornieren
+            </button>
+            <button class="admin-button secondary admin-modal-close-btn">
+              Schließen
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="confirm-cancel-modal" class="admin-modal">
+        <div class="admin-modal-content confirm-modal">
+          <h3>Termin stornieren</h3>
+          <p>Sind Sie sicher, dass Sie diesen Termin stornieren möchten?</p>
+          <p>Diese Aktion kann nicht rückgängig gemacht werden.</p>
+          <div class="admin-modal-actions">
+            <button id="confirm-cancel-btn" class="admin-button danger">
+              Ja, stornieren
+            </button>
+            <button class="admin-button secondary cancel-modal-close">
+              Abbrechen
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mainWrapper">
+      <section id="register" class="form-section view registerSection">
+        <h2 class="section-title registerTitle">Registrierung</h2>
+        <form id="registerForm" class="form">
+          <label for="regEmail" class="form-label">E-Mail Adresse:</label>
+          <input
+            type="email"
+            id="regEmail"
+            name="regEmail"
+            class="form-input"
+            required
+          />
+
+          <label for="regPassword" class="form-label">Passwort:</label>
+          <input
+            type="password"
+            id="regPassword"
+            name="regPassword"
+            class="form-input"
+            required
+          />
+
+          <label for="regConfirmPassword" class="form-label"
+            >Passwort bestätigen:</label
+          >
+          <input
+            type="password"
+            id="regConfirmPassword"
+            name="regConfirmPassword"
+            class="form-input"
+            required
+          />
+          <button type="submit" class="form-button">Registrieren</button>
+        </form>
+      </section>
+      <div class="main view" id="login">
+        <section id="login" class="form-section">
+          <h2 class="section-title">Anmeldung</h2>
+          <form id="loginForm" class="form">
+            <label for="loginEmail" class="form-label">E-Mail Adresse:</label>
+            <input
+              type="email"
+              id="loginEmail"
+              name="loginEmail"
+              class="form-input"
+              required
+            />
+            <label for="loginPassword" class="form-label">Passwort:</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="loginPassword"
+              class="form-input"
+              required
+            />
+            <button type="submit" class="form-button">Anmelden</button>
+          </form>
+        </section>
+        <p>
+          Noch nicht registriert?
+          <a href="/register" style="text-decoration: none">
+            Konto erstellen
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <section id="my-bookings" class="view bookings-section">
+      <h2 class="section-title">Meine Buchungen</h2>
+      <div id="bookings-container">
+        <div class="loader" id="bookings-loader">Lade Buchungen...</div>
+        <div id="no-bookings-message" style="display: none">
+          Sie haben noch keine Buchungen.
+        </div>
+        <div id="bookings-list"></div>
+      </div>
+    </section>
+
+    <section id="appointments" class="view appointmentSection">
+      <h2 class="appointment-section-title">Terminbuchung</h2>
+      <div class="booking-info-banner">
+        <p>Sie können maximal 5 Impftermine buchen.</p>
+        <p id="current-bookings-count">
+          Aktuelle Anzahl Ihrer Buchungen: <span>0</span>
+        </p>
+      </div>
+      <form id="appointmentForm">
+        <div class="appointment-form-group">
+          <label for="centerSelect" class="appointment-form-label"
+            >Impfzentrum wählen:</label
+          >
+          <select id="centerSelect" class="appointment-form-input" required>
+            <option value="">Bitte wählen</option>
+          </select>
+        </div>
+        <div class="appointment-form-group">
+          <label for="appointmentDate" class="appointment-form-label"
+            >Datum wählen:</label
+          >
+          <input
+            type="date"
+            id="appointmentDate"
+            class="appointment-form-input"
+            required
+          />
+        </div>
+
+        <div class="appointment-form-group">
+          <label for="vaccineSelect" class="appointment-form-label"
+            >Impfstoff wählen:</label
+          >
+          <select id="vaccineSelect" class="appointment-form-input" required>
+            <option value="">Bitte wählen</option>
+          </select>
+        </div>
+
+        <div class="appointment-form-group">
+          <label for="slotSelect" class="appointment-form-label"
+            >Zeitslot wählen:</label
+          >
+          <select id="slotSelect" class="appointment-form-input" required>
+            <option value="">Bitte wählen</option>
+          </select>
+        </div>
+
+        <div class="appointment-form-group">
+          <label for="bookingFor" class="appointment-form-label"
+            >Buchen für:</label
+          >
+          <select id="bookingFor" class="appointment-form-input">
+            <option value="self">Mich</option>
+            <option value="other">Andere Personen</option>
+          </select>
+        </div>
+
+        <div
+          id="otherBookingOptions"
+          class="appointment-form-group"
+          style="display: none"
+        >
+          <label for="numPersons" class="appointment-form-label"
+            >Anzahl der Personen (max. 5):</label
+          >
+          <select id="numPersons" class="appointment-form-input">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="appointment-form-group">
+          <button
+            id="bookAppointment"
+            type="submit"
+            class="appointment-form-button"
+          >
+            Termin buchen
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section id="qr-code-display" class="view qr-section" style="display: none">
+      <div class="qr-container">
+        <h2>Ihr QR-Code für den Impftermin</h2>
+        <div id="qr-code"></div>
+        <div class="qr-code-info">
+          <p>Bitte zeigen Sie diesen QR-Code im Impfzentrum vor.</p>
+          <p>Der QR-Code enthält alle Informationen zu Ihrem Termin.</p>
+        </div>
+        <button id="close-qr" class="form-button">Schließen</button>
+      </div>
+    </section>
+
+    <div
+      id="cancellation-confirmation"
+      class="confirmation-dialog"
+      style="display: none"
+    >
+      <div class="confirmation-dialog-content">
+        <h3>Termin stornieren</h3>
+        <p>Sind Sie sicher, dass Sie diesen Termin stornieren möchten?</p>
+        <p>Diese Aktion kann nicht rückgängig gemacht werden.</p>
+        <div class="confirmation-dialog-actions">
+          <button
+            id="confirm-cancellation-btn"
+            class="confirmation-dialog-button confirm"
+          >
+            Ja, stornieren
+          </button>
+          <button
+            id="cancel-cancellation-btn"
+            class="confirmation-dialog-button cancel"
+          >
+            Abbrechen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Über uns</h3>
+          <p>
+            Das Impfterminregistrierungssystem bietet eine einfache und sichere
+            Möglichkeit, Impftermine zu buchen.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Schnellzugriff</h3>
+          <ul class="footer-links">
+            <li><a href="/hero">Startseite</a></li>
+            <li><a href="/register">Registrierung</a></li>
+            <li><a href="/appointments">Termine buchen</a></li>
+            <li><a href="/my-bookings">Meine Buchungen</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Kontakt</h3>
+          <p>
+            <strong>E-Mail:</strong> support@impftermin-nemerb.de<br />
+            <strong>Telefon:</strong> 0123-456789<br />
+            <strong>Servicezeiten:</strong> Mo-Fr, 8:00-18:00 Uhr
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024-2025 Impfterminregistrierung. Alle Rechte vorbehalten.
+        </p>
+        <p>
+          <a href="/datenschutz" class="footer-link">Datenschutz</a> |
+          <a href="/impressum" class="footer-link">Impressum</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+    <script
+      type="module"
+      src="/docker-swe3-2024-14-java/static/main.js"
+    ></script>
+  </body>
+</html>

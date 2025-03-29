@@ -1,0 +1,349 @@
+.time-until-appointment {
+  margin: 12px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.time-days {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.time-hours {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.time-few-hours {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.time-critical {
+  background-color: #ffebee;
+  color: #c62828;
+  font-weight: bold;
+}
+
+.time-past {
+  background-color: #f5f5f5;
+  color: #757575;
+  font-style: italic;
+}
+
+.cancellation-disabled {
+  background-color: #eeeeee;
+  color: #757575;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.confirmation-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-dialog-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 90%;
+}
+
+.confirmation-dialog h3 {
+  margin-top: 0;
+  color: #d32f2f;
+}
+
+.confirmation-dialog p {
+  margin: 15px 0;
+}
+
+.confirmation-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.confirmation-dialog-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirmation-dialog-button.confirm {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.confirmation-dialog-button.cancel {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.bookings-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+  text-align: center;
+  margin: 2rem 0;
+  color: #666;
+}
+
+#no-bookings-message {
+  text-align: center;
+  margin: 2rem 0;
+  color: #666;
+  font-style: italic;
+}
+
+.booking-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.booking-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.booking-details {
+  padding: 1rem;
+}
+
+.booking-details p {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.bookings-section .cancel-booking-btn,
+.bookings-section .show-qr-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.bookings-section .cancel-booking-btn {
+  background-color: #ffcccc;
+  color: #d32f2f;
+}
+
+.bookings-section .cancel-booking-btn:hover {
+  background-color: #ffb3b3;
+}
+
+.bookings-section .show-qr-btn {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.bookings-section .show-qr-btn:hover {
+  background-color: #bbdefb;
+}
+
+.cancelled-info {
+  font-style: italic;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.bookings-section .status-booked {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.bookings-section .booking-card.status-booked {
+  border-left: 4px solid #2e7d32;
+}
+
+.bookings-section .status-cancelled {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.bookings-section .booking-card.status-cancelled {
+  background-color: #fafafa;
+  border-left: 4px solid #c62828;
+  opacity: 0.8;
+}
+
+.bookings-section .status-completed {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.bookings-section .booking-card.status-completed {
+  border-left: 4px solid #1565c0;
+}
+
+.booking-info-banner {
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  color: #1565c0;
+}
+
+.booking-info-banner p {
+  margin: 5px 0;
+}
+
+#current-bookings-count {
+  font-weight: bold;
+}
+
+#current-bookings-count span {
+  background-color: #1976d2;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.qr-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.qr-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+#qr-code {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+}
+
+.qr-code-preview {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.qr-code-info {
+  margin: 20px 0;
+  color: #555;
+}
+
+.qr-code-instructions {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.qr-code-instructions ol {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.qr-code-instructions li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .booking-actions {
+    flex-direction: column;
+  }
+
+  .bookings-section .cancel-booking-btn,
+  .bookings-section .show-qr-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .confirmation-dialog-actions {
+    flex-direction: column;
+  }
+
+  .confirmation-dialog-button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

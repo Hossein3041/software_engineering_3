@@ -1,0 +1,29 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  max-width: 800px;
+}
+
+.registerTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  padding: 40px 20px;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content h2 {
+  color: #1565c0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}

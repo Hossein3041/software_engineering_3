@@ -1,0 +1,49 @@
+.info-section {
+  margin-bottom: 60px;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.info-card {
+  background-color: #f5f9ff;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  color: #1565c0;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.info-card li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.info-card p {
+  margin: 0 0 12px 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.contact-info {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

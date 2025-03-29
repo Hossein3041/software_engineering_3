@@ -1,0 +1,128 @@
+.form-section {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1565c0;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #1976d2;
+  border-radius: 2px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.form-input:focus {
+  border-color: #1976d2;
+  outline: none;
+  background: #ffffff;
+}
+
+.form-button {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-button:hover {
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+}
+
+#login {
+  text-align: center;
+}
+
+#login p {
+  margin-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+#login a {
+  color: #1976d2;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+
+#login a:hover {
+  color: #0d47a1;
+}
+
+.registerSection {
+  background-color: #f9fcff;
+}
+
+.registerTitle {
+  color: #0d47a1;
+}
+
+@media (max-width: 576px) {
+  .form-section {
+    margin: 1rem;
+    padding: 1.5rem;
+    max-width: none;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .form-input,
+  .form-button {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
