@@ -2,7 +2,7 @@
 
 Dieses Reposotory enthält nur die hauptsächlichen Programmierdateien aus der Veranstaltung Software Engineering 3.
 Man schaue sich bitte ebnenfalls die PDF-Datei an (das Plakat zum Projekt)
-Die eigentliche Projektstruktur würde wie folgt aussehen:
+Die eigentliche Projektstruktur würde wie folgt aussehen (einmal herunterladen):
 
 .
 ├── backend
